@@ -9,3 +9,13 @@ git add  （文件名称）
 git status 查看将要提交的文件
 git commit -m"写入将要提交的动态名"
 git log 查看每次提交的东西
+
+if(条件){
+  满足运行
+}else{
+  不满足运行
+}
+
+while(循环条件){
+  循环操作
+}
