@@ -3,3 +3,8 @@
 git基本操作
 git config --global user.name "Tocy"
 git config --global user.email zyvj@qq.com
+
+提交
+git add  （文件名称）
+git status 查看将要提交的文件
+git commit -m"写入将要提交的动态名"
