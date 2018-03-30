@@ -1,1 +1,5 @@
 这是我的第一个git
+
+git基本操作
+git config --global user.name "Tocy"
+git config --global user.email zyvj@qq.com
