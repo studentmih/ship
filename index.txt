@@ -8,3 +8,4 @@ git config --global user.email zyvj@qq.com
 git add  （文件名称）
 git status 查看将要提交的文件
 git commit -m"写入将要提交的动态名"
+git log 查看每次提交的东西
