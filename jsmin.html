@@ -8,17 +8,24 @@
 </head>
 <body>
   <script>
-    var scroes =[60, 58, 14, 20, 25, 20, 11, 15, 99];
-    var min = scroes[0];
-    var item;
-    for(var i = 1;i < scroes.length; i++){
-      if(scroes[i] < min){
-        min = scroes[i];
-        item = i;
-      }
-    }
-    document.write("数组中最小的数" + min + "下标是"+ item + "<br>");
-  </script>
+        var scroes = [12, 15, 11, 17, 18, 19, 20];
+        var arr2 = [15, 11, 10, 13, 14, 15, 16]
+        function findmin(arr){
+            var min = arr[0];
+            var item;
+            for(var i = 1; i < arr.length; i++){
+                if(arr[i] < min){
+                    min = arr[i];
+                    item = i;
+                }
+            }
+       
+        document.write("数组中最小的是" + min + "下标是" + item + "<br>")
+        }
+
+        findmin(scroes);
+        findmin(arr2);
+    </script>
 </body>
 </html>
 
