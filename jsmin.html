@@ -9,8 +9,15 @@
 <body>
   <script>
     var scroes =[60, 58, 14, 20, 25, 20, 11, 15, 99];
-    var arr = scroes.sort();
-    document.write("数组中最小的数" + arr[0] + "<br>");
+    var min = scroes[0];
+    var item;
+    for(var i = 1;i < scroes.length; i++){
+      if(scroes[i] < min){
+        min = scroes[i];
+        item = i;
+      }
+    }
+    document.write("数组中最小的数" + min + "下标是"+ item + "<br>");
   </script>
 </body>
 </html>
