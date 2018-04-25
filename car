@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var audi = {
+      make:'audi',
+      model:'A6',
+      year:2016,
+      colour:'black',
+      passcngcrs:4,  
+    }
+    var bugatti = {
+      make:'bugatti',
+      model:'verone',
+      year:2015,
+      colour:'pink',
+      passcngcrs:2,
+      convertitle:false,
+      hileage: 1000,
+    }
+    
+    function isnewcar(car1){
+      if(bugatti.year > 2017 && bugatti.hileage < 10000){
+        document.write(car1.make + '是好车' + '<br>')
+      }else{document.write(car1.make + "是破车" + '<br>')
+      }
+    }
+
+    isnewcar(bugatti);
+    isnewcar(audi);
+  </script>
+</body>
+</html>
