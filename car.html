@@ -30,8 +30,12 @@
       }else{document.write(car1.make + "是破车" + '<br>')
       }
     }
-    
-    <script>
+
+    isnewcar(bugatti);
+    isnewcar(audi);
+  </script>
+
+  <script>
     var fiat = {
       make:"First",
       model:"500",
@@ -41,14 +45,45 @@
       convertible:false,
       mileage:88000,
       drive:function(){
-        alert("zoom zoom!");
+        if(this.started == true){
+          alert('zooooooooooooooooooooommmmmmmmmmmmmmm')
+        }else{
+          alert('fuck you bitch')
+        }
+      },
+      setcolor:function(c){
+        this.color = c;
+      },
+      getcolor:function(){
+        return this.color;
+      },
+      start:function(){
+        this.started = true;
+      },
+      stop:function(){
+        this.started = false;
       }
     }
-    fiat.drive()
+    document.write(fiat.getcolor() + "<br>");
+    fiat.setcolor('golden');
+    document.write(fiat.getcolor() +"<br>")
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.stop();
   </script>
-
-    isnewcar(bugatti);
-    isnewcar(audi);
-  </script>
+</body>
+</html>
 </body>
 </html>
